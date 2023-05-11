@@ -1,10 +1,10 @@
 # NoRI -Note Reference Insertion
 
 Script that search for study summary files, fallowing an specific structure
-on YAML file format, and look for notes on the files. It returns a string
-output to NeoVim, the note structure on the summary file indicates whether is
-paraphrase o verbatim, so that inset a $\LaTeX$ quotation reference
-respectively.
+on [YAML](https://yaml.org/) file format, and look for notes on the files.
+It returns a string output to [Neovim](https://neovim.io/), the note structure
+on the summary file indicates whether is paraphrase o verbatim, so that inset
+a $\LaTeX$ quotation reference respectively.
 
 ## Directory expected structure
 
@@ -75,4 +75,9 @@ References: # Source references
   n+2: other...
 ...
 ```
+
+## Dependencies
+
+* [Inkscape figure manager](https://github.com/gillescastel/latex-snippets)
+* [`rofi`](https://github.com/davatorium/rofi) for a selection dialog
 
