@@ -11,7 +11,7 @@ from inkscapefigures.picker import pick
 from ruamel.yaml import YAML
 
 # Loading logger
-logging.basicConfig()
+logging.basicConfig(level='INFO')
 log = logging.getLogger('nori')
 
 #loading User config folder
@@ -53,7 +53,7 @@ def open(name):
 
     yaml = YAML(typ='safe')
     data = yaml.load(name)
-    log.info('{} loaded'.format(name))
+    # log.info('{} loaded'.format(name))
     log.debug(data)
 
     return data
@@ -112,7 +112,6 @@ def insert(root):
             printThis = latex_citation(yamlINFO['Bib'],txt)
             isOutPut = True
         elif type(currentDic[currentKeys[keyIdx]]) is dict:
-            print('está llegando hasta aquí')
             if not recurrentDictionary:
                 currentDic = yamlINFO[currentKeys[keyIdx]]
                 recurrentDictionary = True
@@ -127,7 +126,7 @@ def insert(root):
             isOutPut = True
 
     print(printThis)
-    return printThis
+    # return printThis
 
 if __name__ == "__main__":
     cli()
