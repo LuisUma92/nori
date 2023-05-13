@@ -40,8 +40,8 @@ Authors:
 Title: |
   The title
 
-Bib: # citation-key defined on .bib file
- -
+Bib: | # citation-key defined on .bib file
+  citation-key 
 
 Keywords:
   Article:
@@ -80,4 +80,3 @@ References: # Source references
 
 * [Inkscape figure manager](https://github.com/gillescastel/latex-snippets)
 * [`rofi`](https://github.com/davatorium/rofi) for a selection dialog
-
